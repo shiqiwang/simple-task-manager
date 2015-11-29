@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>task-manager</title>
+	<meta charset="utf-8" />
+    <link href="classifyList.css" rel="stylesheet"/>
+    <link href="taskList.css" rel="stylesheet" />
+    <link href="todoList.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="taskManagerBox">
+        <!--头部, 作品名-->
+        <div id="header"><h3>Task Manager</h3></div>
+        <!--主体部分-->
+        <div id="mainBox">
+
+            <!--第一个侧栏,所有的任务文件夹列表-->
+            <div id="classifyList">
+                <div class="mainBody">
+                    <h4>所有任务(<span id="allTaskNum">0</span>)</h4>
+                    <h4>分类列表</h4>
+                    <!--<div class="classifyLists">
+                        <span class="folderIcon"></span>
+                        <span class="folderName">默认列表(<span>0</span>)</span>
+                        <span class="removeIcon"></span>
+                    </div>-->
+                </div>
+                <div class="feet">
+                    <hr />
+                    <span class="addIcon"></span>
+                    <span class="addClassify" id="addFolder">新增分类</span>
+                </div>
+            </div>
+
+            <!--第二个侧栏, 所有任务文件列表-->
+            <div id="taskList">
+                <div id="taskListHead">
+                    <span>所有</span>
+                    <span>未完成</span>
+                    <span>已完成</span>
+                </div>
+                <div class="mainBody">
+                    <!--<div class="taskLists">
+                        <div class="taskCreateTime">2015-10-11</div>
+                        <div class="taskName">学习JavaScript</div>
+                    </div>-->
+                </div>
+                <div class="feet">
+                    <hr />
+                    <span class="addIcon"></span>
+                    <span class="addClassify" id="addTask">新增任务</span>
+                </div>
+            </div>
+
+            <!--第三栏-->
+            <div id="todoList">
+                <div id="todoListHead">
+                    <span id="displayTaskName">学习JavaScript</span>
+                    <span id="save" class="forUser">保存</span>
+                    <span id="edit" class="forUser">编辑</span>
+                </div>
+                <div id="todoTime">
+                    <span id="displayTime">2015-10-11</span>
+                </div>
+                <div id="editBox">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="classifyList.js"></script>
+    <script src="taskList.js"></script>
+    <script src="todoList.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

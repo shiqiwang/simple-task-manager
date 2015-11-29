@@ -1,0 +1,55 @@
+﻿#todoList {
+    height: 100%;
+    position: absolute;
+    left: 502px;
+    right: 0;
+}
+
+#todoListHead {
+    background-color: rgb(242, 242, 242);
+    font-weight: bold;
+}
+
+#todoTime {
+    background-color: rgb(250, 250, 238);
+    border-bottom: 1px solid rgb(154, 154, 154);
+}
+
+#todoListHead, #todoTime {  
+    border-top: 1px solid rgb(154, 154, 154);
+    padding-left: 20px;
+    line-height: 55px;
+    height: 55px;
+}
+
+#todoListHead #save, #todoListHead #edit {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    height: 25px;
+    border: 1px solid rgb(242, 242, 242);
+    margin-top: 15px;
+    line-height: 25px;
+    width: 50px;
+    text-align: center;
+}
+
+#todoListHead #edit {
+    right: 80px;
+}
+
+#todoListHead #save:hover,
+#todoListHead #edit:hover {
+    cursor: pointer;
+    border: 1px solid rgb(154, 154, 154);
+    background-color: #fff;
+}
+
+#editBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 113px;
+    bottom: 0;
+    padding: 20px;
+}
