@@ -1,6 +1,7 @@
 ﻿var FS = require("fs-extra");
 var express = require("express");
 
+// ensure data directory.
 FS.ensureDirSyn('taskManagerData');
 
 function createFolder(folderName) {
